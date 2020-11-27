@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+@import '../../styles/base.scss';
+
+
+header.welcome-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcome-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 15px;
+}
+
+
+
+

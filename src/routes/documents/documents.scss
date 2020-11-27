@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+@import '../../styles/base.scss';
+
+h1.heading {
+    padding-bottom: 4rem;
+}
+.document-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.document-object {
+    max-width: 300px;
+    margin: 1rem 0;
+}
+.document-box {
+    width: 250px;
+    height: 350px;
+    background-color: #f1f3fa;
+    transition: .2s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.04);
+    }
+}
+.document-header {
+    font-size: 24px;
+    font-weight: 400;
+}

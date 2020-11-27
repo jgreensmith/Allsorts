@@ -1,0 +1,22 @@
+
+$brand-primary: #ffff33;
+$brand-secondary: #F1F3Fa;
+$brand-logo: #4e1768ec; 
+
+$font-color-primary: #665372;
+$font-color-secondary: #aaaaaa;
+
+.main-title {
+    color: #644f69;
+    font-size: 45px;
+    font-weight: 400;
+    margin: auto;
+    padding-bottom: 15px;
+    &.sm {
+        font-size: 1.25rem;
+    }
+}
+.blurb-header {
+    font-size: 24px;
+    color: #646B90;
+}

@@ -1,0 +1,130 @@
+@import '../../styles/variables.scss';
+
+.main-nav,
+.container {
+    width: 100%;
+    background-color: $brand-primary;
+    margin: 0 auto;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10px;
+    box-sizing: border-box;
+}
+
+.brand-wrapper {
+    padding: 0;
+    margin: auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.brand-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    justify-content: space-around;
+    line-height: 1rem;
+    color: $brand-logo;
+    font-weight: 600;
+    &__top {
+        font-size: 25px;
+    }
+    &__bottom {
+        font-size: 18px;
+    }
+} 
+
+
+
+.topnav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li.nav-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav .nav-link {
+    padding: 13px 20px 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: $font-color-primary;
+}
+
+.topnav .nav-link:hover {
+    color: $font-color-secondary;
+}
+
+.icon {
+    width: 25px;
+    height: 2px;
+    background-color: $font-color-primary;
+    margin: 6px 0;
+}
+
+.dropDownIcon {
+    display: none;
+}
+
+//########### mobile ##############
+
+@media(max-width: 1130px) {
+
+    ul.topnav li.dropDownIcon {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+    }
+    .btn-drop-down {
+        border: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        &:hover {
+            transform: scale(1.04);
+            cursor: pointer;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+// was topnav.clicked
+    ul.topnav {
+        width: 0px;
+        flex-direction: column;
+        text-align: right;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: $brand-secondary;
+        z-index: 2;
+        height: 100vh;
+        overflow: hidden;
+        transition: .5s;
+        &.clicked {
+            width: 250px;
+            transition: .5s;
+            box-shadow: -2px 0 6px rgba(0, 0, 0, .2);
+        }    
+    }
+
+    ul.topnav li.nav-item {
+        position: relative;
+        top: 30px;
+    }
+    ul.topnav li .nav-link {
+        display: block;
+        white-space: nowrap;
+    }
+}

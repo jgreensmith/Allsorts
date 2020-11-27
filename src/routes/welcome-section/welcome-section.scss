@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+@import '../../styles/base.scss';
+
+
+.media-object {
+    display: flex;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+.icon-wrapper-right,
+.blurb-wrapper-right {
+    order: 2;
+}
+.icon-wrapper-left,
+.blurb-wrapper-left {
+    order: 1;
+}
+.icon-wrapper-left,
+.icon-wrapper-right {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.blurb-wrapper-left,
+.blurb-wrapper-right {
+    flex: 1;
+    text-align: left;
+}
+
+.icon-size {
+    width: 180px;
+}
+
+@media (max-width: 768px) {
+    .media-object {
+        flex-direction: column;
+        text-align: center;
+    }
+    .icon-wrapper-right,
+    .icon-wrapper-right {
+        order: 1;
+    }
+    .blurb-wrapper-left,
+    .blurb-wrapper-right {
+        order: 2;
+    }
+}
+
