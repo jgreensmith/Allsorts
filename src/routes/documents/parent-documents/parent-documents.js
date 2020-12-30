@@ -1,23 +1,23 @@
 import React from 'react';
-import './documents.scss';
+import './parent-documents.scss';
 
-const Documents = () => {
+const ParentDocuments = () => {
     return (
        <section className="section">
            <div className="block-container">
-                <h1 className="main-title heading">Documents</h1>
+                <h1 className="main-title heading">Parent Documents</h1>
                 <div className="document-wrapper">
                     <div className="document-object">
                         <div className="document-box"></div>
-                        <h3 className="document-header">Parent Documents</h3>
+                        <h3 className="document-header">Reg form</h3>
                     </div>
                     <div className="document-object">
                         <div className="document-box"></div>
-                        <h3 className="document-header">EYFS</h3>
+                        <h3 className="document-header">FEEE</h3>
                     </div>
                     <div className="document-object">
                         <div className="document-box"></div>
-                        <h3 className="document-header">Policies</h3>
+                        <h3 className="document-header">another dutty reg form</h3>
                     </div>
 
                 </div>
@@ -26,4 +26,4 @@ const Documents = () => {
     );
 };
 
-export default Documents;
+export default ParentDocuments;

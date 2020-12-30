@@ -8,7 +8,9 @@ import Navbar from './components/navbar';
 import Welcome from './routes/welcome';
 import Footer from './components/footer';
 import WelcomeSection from './routes/welcome-section';
-import Documents from './routes/documents';
+import ParentDocuments from './routes/documents/parent-documents';
+import Policies from './routes/documents/policies';
+import Eyfs from './routes/documents/eyfs';
 
 library.add(fab);
 
@@ -21,8 +23,14 @@ const App = () => (
               <Route path="/about">
                 <h2>About Us</h2>
               </Route>
-              <Route path="/documents">
-                <Documents/> 
+              <Route path="/parent">
+                <ParentDocuments/> 
+              </Route>
+              <Route path="/eyfs">
+                <Eyfs/> 
+              </Route>
+              <Route path="/policies">
+                <Policies/> 
               </Route>
               <Route path="/calendar">
                   <h1>Calendar</h1> 

@@ -24,17 +24,16 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer-container">
-                <div className="footer-logo-wrapper">
-                    <img src="/images/aslion-resize.png" alt="Allsorts logo"></img>
-                    <div className="footer-title">
-                        <span className="footer-title__top">Allsorts</span>
-                        <span className="footer-title__bottom">Pre-School</span>
-                    </div>
+            <div className="footer-container btm">
+                <div className="footer-object-wrapper">
+                    <a href="https://www.facebook.com/AllsortsBollington" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'facebook-square']} size="2x" className="fb-icon"/>
+                    </a>  
                 </div>
-                <div className="footer-icon-container">
-                    <FontAwesomeIcon icon={['fab', 'facebook-square']} size="2x"/>
+                <div className="footer-object-wrapper sm">
+                    <small className="copyright">&copy; 2021, Allsorts Pre-School</small>
                 </div>
+                
                 
                
             </div>
