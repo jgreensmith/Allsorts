@@ -7,7 +7,7 @@ const WelcomeSection = () => {
             <div className="block-container">
                 <div className="media-object">
                     <div className="icon-wrapper-left">
-                        <img className="icon-size" src="/images/maggyglass.png"></img>
+                        <img className="icon-size" src="/images/PikPng.com-magglass.png"></img>
                     </div>
                     <div className="blurb-wrapper-right">
                         <h3 className="blurb-header">
@@ -20,7 +20,7 @@ const WelcomeSection = () => {
                 </div>
                 <div className="media-object">
                     <div className="icon-wrapper-right">
-                        <img className="icon-size" src="/images/paint-splodge.jpg"></img>
+                        <img className="icon-size" src="/images/PikPng-splash-og.png"></img>
                     </div>
                     <div className="blurb-wrapper-left">
                         <h3 className="blurb-header">
@@ -33,7 +33,7 @@ const WelcomeSection = () => {
                 </div>
                 <div className="media-object">
                     <div className="icon-wrapper-left">
-                        <img className="icon-size" src="/images/bulb.png"></img>
+                        <img className="icon-size" src="/images/brightlight.png"></img>
                     </div>
                     <div className="blurb-wrapper-right">
                         <h3 className="blurb-header">

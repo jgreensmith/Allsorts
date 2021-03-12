@@ -5,31 +5,30 @@ import {
     MenuList,
     MenuButton,
     MenuItem,
-    MenuLink,
   } from "@reach/menu-button";
   import "@reach/menu-button/styles.css";
   import './dropdown.scss';
+  import '../navbar/navbar.scss';
    
   const DropDown = ({links}) => {
     return (
-      <li className="nav-item">
         <Menu>
           <MenuButton className="navbar-documents">
             Documents <span aria-hidden>▾</span>
           </MenuButton>
           <MenuList>
-            <Link to='/parent'>
-              <MenuItem>Parent Documents</MenuItem>
-            </Link>
-            <Link to='/eyfs'>
-              <MenuItem>EYFS</MenuItem>
-            </Link>
-            <Link to='/policies'>
-              <MenuItem>Policies and Procedures</MenuItem>
-            </Link>
+            <MenuItem>
+              <Link to='/parent'>Parent Documents</Link> 
+            </MenuItem>
+            <MenuItem>
+              <Link to='/eyfs'>EYFS</Link> 
+            </MenuItem>
+            <MenuItem>
+              <Link to='/policies'>Policies and Procedures</Link> 
+            </MenuItem>
           </MenuList>
         </Menu>
-      </li>
+      
       
     );
   }

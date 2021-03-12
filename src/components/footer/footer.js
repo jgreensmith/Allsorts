@@ -9,13 +9,13 @@ const Footer = () => {
             <div className="footer-container top">
                 <div className="footer-img-container">
                     <div className="img-wrapper">
-                        <img src="/images/BigLottery.jpg"></img>
+                        <img src="/images/BigLottery-og.jpg"></img>
                     </div>
                     <div className="img-wrapper coop">
-                        <img src="/images/coOpLogo.jpg"></img>
+                        <img src="/images/coOpLogo-og.jpg"></img>
                     </div>
                     <div className="img-wrapper">
-                        <img src="/images/BollingtonTC.jpg"></img>
+                        <img src="/images/BollingtonTC-og.jpg"></img>
                     </div>
                     <div className="img-wrapper">
                         <p className="beer">

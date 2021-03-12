@@ -4,18 +4,26 @@ import { Link } from 'react-router-dom';
 import DropDown from '../dropdown'
 import './navbar.scss';
 
+// Object.keys(buttonText).map((links) => {
+//     const documentsDropDown = {
+//         parent: "Parent Documents",
+//         eyfs: "EYFS",
+//         policies: "Policies and Procedures",
+//     }
+// })
 const documentsDropDown = {
     parent: "Parent Documents",
     eyfs: "EYFS",
     policies: "Policies and Procedures",
 }
 
+
+
 const navLinks = {
     welcome: "Welcome",
     about: "About Us",
     documents: documentsDropDown,
     calendar: "School Calendar",
-    "community-links": "Community Links",
     contact: "Contact Us",
 }
 
@@ -55,21 +63,21 @@ const Navbar = () => {
     }, [ref, topNavOpen]);
 
     
-    document.addEventListener('DOMContentLoaded', function() {
-        window.addEventListener('scroll', makeNavbarSticky);
-        const navbar = document.getElementById("navbar");
-        const sticky = navbar.offsetTop;
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     window.addEventListener('scroll', makeNavbarSticky);
+    //     const navbar = document.getElementById("navbar");
+    //     const sticky = navbar.offsetTop;
 
-        function makeNavbarSticky() {
-            if(window.pageYOffset >= sticky) {
-                document.body.style.paddingTop = navbar.offsetHeight + 'px';
-                navbar.classList.add("sticky");
-            } else {
-                document.body.style.paddingTop = 0;
-                navbar.classList.remove("sticky");
-            }
-    }
-    })
+    //     function makeNavbarSticky() {
+    //         if(window.pageYOffset >= sticky) {
+    //             document.body.style.paddingTop = navbar.offsetHeight + 'px';
+    //             navbar.classList.add("sticky");
+    //         } else {
+    //             document.body.style.paddingTop = 0;
+    //             navbar.classList.remove("sticky");
+    //         }
+    //     }
+    // })
 
 
     return (
@@ -86,7 +94,11 @@ const Navbar = () => {
             {
                 Object.keys(navLinks).map((link) => {
                     if (typeof navLinks[link] === 'object') {
-                        return (<DropDown links = {link}/>);
+                        return (
+                            <li className="nav-item" key={link}>
+                                <DropDown links = {link}/>
+                            </li>
+                        )    
                     }
                     return (
                         <li className="nav-item" key={link}>

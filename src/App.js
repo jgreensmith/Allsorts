@@ -11,6 +11,9 @@ import WelcomeSection from './routes/welcome-section';
 import ParentDocuments from './routes/documents/parent-documents';
 import Policies from './routes/documents/policies';
 import Eyfs from './routes/documents/eyfs';
+import Contact from './routes/contact';
+import About from './routes/about';
+import Calendar from './routes/calendar';
 
 library.add(fab);
 
@@ -21,7 +24,7 @@ const App = () => (
         <div className="page-container">
             <Switch>
               <Route path="/about">
-                <h2>About Us</h2>
+                <About/>
               </Route>
               <Route path="/parent">
                 <ParentDocuments/> 
@@ -33,13 +36,10 @@ const App = () => (
                 <Policies/> 
               </Route>
               <Route path="/calendar">
-                  <h1>Calendar</h1> 
-              </Route>
-              <Route path="/community-links">
-                  <h1>Dope Links</h1> 
+                  <Calendar/>
               </Route>
               <Route path="/contact">
-                  <h1>Giz a ring</h1> 
+                  <Contact/> 
               </Route>
               <Route path="/">
                 <Welcome/>
