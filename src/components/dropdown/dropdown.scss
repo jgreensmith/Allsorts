@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+
+.navbar-documents {
+    background: none;
+    border: none;
+    text-decoration: none;
+    font: inherit;
+    font-size: 20px;
+	color: $font-color-primary;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+    &:hover {
+        color: $font-color-secondary;
+    }
+}

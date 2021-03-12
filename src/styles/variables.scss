@@ -7,13 +7,15 @@ $font-color-primary: #665372;
 $font-color-secondary: #aaaaaa;
 
 .main-title {
-    color: #644f69;
+    color: #5f5f5f;
     font-size: 45px;
+    text-align: center;
     font-weight: 400;
     margin: auto;
     padding-bottom: 15px;
     &.sm {
         font-size: 1.25rem;
+        padding: 0;
     }
 }
 .blurb-header {

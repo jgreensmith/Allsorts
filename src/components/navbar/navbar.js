@@ -1,13 +1,29 @@
+
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import DropDown from '../dropdown'
 import './navbar.scss';
+
+// Object.keys(buttonText).map((links) => {
+//     const documentsDropDown = {
+//         parent: "Parent Documents",
+//         eyfs: "EYFS",
+//         policies: "Policies and Procedures",
+//     }
+// })
+const documentsDropDown = {
+    parent: "Parent Documents",
+    eyfs: "EYFS",
+    policies: "Policies and Procedures",
+}
+
+
 
 const navLinks = {
     welcome: "Welcome",
     about: "About Us",
-    documents: "Documents",
+    documents: documentsDropDown,
     calendar: "School Calendar",
-    "community-links": "Community Links",
     contact: "Contact Us",
 }
 
@@ -45,12 +61,27 @@ const Navbar = () => {
             document.removeEventListener('touchend', outsideClickHandler);
         };
     }, [ref, topNavOpen]);
-    
 
+    
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     window.addEventListener('scroll', makeNavbarSticky);
+    //     const navbar = document.getElementById("navbar");
+    //     const sticky = navbar.offsetTop;
+
+    //     function makeNavbarSticky() {
+    //         if(window.pageYOffset >= sticky) {
+    //             document.body.style.paddingTop = navbar.offsetHeight + 'px';
+    //             navbar.classList.add("sticky");
+    //         } else {
+    //             document.body.style.paddingTop = 0;
+    //             navbar.classList.remove("sticky");
+    //         }
+    //     }
+    // })
 
 
     return (
-        <nav className="main-nav">
+        <nav id="navbar" className="main-nav">
         <div className="brand-wrapper">
             <img src="/images/aslion-resize.png" alt="Allsorts logo"></img>
             <div className="brand-title">
@@ -61,8 +92,16 @@ const Navbar = () => {
         </div>
         <ul className={`topnav ${topNavOpen ? "clicked" : ""}`} ref={ref}>
             {
-                Object.keys(navLinks).map((link) => (
-                    <li className="nav-item" key={link}>
+                Object.keys(navLinks).map((link) => {
+                    if (typeof navLinks[link] === 'object') {
+                        return (
+                            <li className="nav-item" key={link}>
+                                <DropDown links = {link}/>
+                            </li>
+                        )    
+                    }
+                    return (
+                        <li className="nav-item" key={link}>
                         <Link 
                             to={`/${link === 'welcome' ? '' : link}`}
                             className="nav-link" 
@@ -70,8 +109,10 @@ const Navbar = () => {
                         >
                             {navLinks[link]}
                         </Link>
-                    </li>
-                ))
+                        </li>               
+                    )    
+                })
+                    
             }
             
             <li className="dropDownIcon"><button className="btn-drop-down" onClick={showDropDown}>

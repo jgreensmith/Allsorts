@@ -1,18 +1,22 @@
 @import '../../styles/variables.scss';
 
-.main-nav,
-.container {
+.main-nav {
     width: 100%;
     background-color: $brand-primary;
     margin: 0 auto;
-}
-
-.main-nav {
     display: flex;
     justify-content: space-between;
     padding: 2px 10px;
     box-sizing: border-box;
+    overflow: hidden;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+
 
 .brand-wrapper {
     padding: 0;
