@@ -1,14 +1,15 @@
 @import '../../styles/variables.scss';
 
 .main-nav {
-    width: 100%;
+    //width: 100%;
     background-color: $brand-primary;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 2px 10px;
     box-sizing: border-box;
-    overflow: hidden;
+    //overflow: hidden;
+    font-size: 1.2rem;
 }
 .sticky {
     position: fixed;
@@ -45,28 +46,34 @@
 
 
 
-.topnav {
-    display: flex;
-    margin: 0;
-    padding: 0;
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
     list-style: none;
+    text-align: center;
+    width: fit-content;
+    justify-content: end;
+    margin-right: 2rem;
+    margin: auto 0;
 }
-
-li.nav-item {
+  
+.nav-item {
     display: flex;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    height: 80px;
 }
-
-.topnav .nav-link {
-    padding: 13px 20px 0;
-    text-decoration: none;
-    font-size: 20px;
+  
+.nav-link {
     color: $font-color-primary;
-}
-
-.topnav .nav-link:hover {
-    color: $font-color-secondary;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    &:hover {
+    color: black;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
 }
 
 .icon {
@@ -76,59 +83,108 @@ li.nav-item {
     margin: 6px 0;
 }
 
-.dropDownIcon {
+
+.fa-bars {
+    color: rgb(0, 0, 0);
+}
+  
+.nav-link-mobile {
+    display: none;
+}
+  
+.menu-icon {
     display: none;
 }
 
 //########### mobile ##############
 
-@media(max-width: 1130px) {
+@media screen and (max-width: 1130px) {
+    
 
-    ul.topnav li.dropDownIcon {
-        display: block;
-        position: fixed;
-        top: 15px;
-        right: 20px;
+    .NavbarItems {
+      position: relative;
     }
-    .btn-drop-down {
-        border: none;
-        background: none;
-        padding: 0;
-        margin: 0;
-        &:hover {
-            transform: scale(1.04);
-            cursor: pointer;
-        }
-        &:focus {
-            outline: none;
-        }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      text-align: center;
+      align-items: center;
     }
-// was topnav.clicked
-    ul.topnav {
-        width: 0px;
-        flex-direction: column;
-        text-align: right;
-        position: fixed;
-        right: 0;
-        top: 0;
-        background-color: $brand-secondary;
-        z-index: 2;
-        height: 100vh;
-        overflow: hidden;
-        transition: .5s;
-        &.clicked {
-            width: 250px;
-            transition: .5s;
-            box-shadow: -2px 0 6px rgba(0, 0, 0, .2);
-        }    
+  
+    .nav-menu.active {
+      background: $brand-side-menu;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      padding: 0;
     }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #1888ff;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
 
-    ul.topnav li.nav-item {
-        position: relative;
-        top: 30px;
     }
-    ul.topnav li .nav-link {
-        display: block;
-        white-space: nowrap;
+  
+    .fa-times,
+    .fa-bars {
+      color: $brand-logo;
+      font-size: 2rem;
+    }
+    
+  
+    // .nav-links-mobile {
+    //   display: block;
+    //   text-align: center;
+    //   padding: 1.5rem;
+    //   margin: 2rem auto;
+    //   border-radius: 4px;
+    //   width: 80%;
+    //   background: #1888ff;
+    //   text-decoration: none;
+    //   color: #fff;
+    //   font-size: 1.5rem;
+    // }
+  
+    // .nav-links-mobile:hover {
+    //   background: #fff;
+    //   color: #1888ff;
+    //   transition: 250ms;
+    // }
+  
+    button {
+      display: none;
     }
 }

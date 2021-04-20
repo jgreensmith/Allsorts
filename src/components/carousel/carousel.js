@@ -13,16 +13,33 @@ class AllsortsCarousel extends Component {
                     infiniteLoop={true} 
                     interval={3500}
                     transitionTime={900}
+                    dynamicHeight={true}
                 >
                     <div>
-                        <img src="images/board.jpg" />
+                        <img src="images/carousel/img1.jpg" />
                     </div>
                     <div>
-                        <img src="images/longboard.jpg" />
+                        <img src="images/carousel/img2.jpg" />
                     </div>
                     <div>
-                        <img src="images/board.jpg" />
+                        <img src="images/carousel/img3.jpg" />
                     </div>
+                    <div>
+                        <img src="images/carousel/img4.jpg" />
+                    </div>
+                    <div>
+                        <img src="images/carousel/img5.jpg" />
+                    </div>
+                    <div>
+                        <img src="images/carousel/img6.jpg" />
+                    </div>
+                    <div>
+                        <img src="images/carousel/img7.jpg" />
+                    </div>
+                    <div>
+                        <img src="images/carousel/img8.jpg" />
+                    </div>
+                    
                 </Carousel>
             </div>
             

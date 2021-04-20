@@ -14,7 +14,7 @@ const WelcomeSection = () => {
                             Explore
                         </h3>
                         <p className="blurb">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                            Our indoor and outdoor environments enable children to be inquisitive, investigate and experience new things.
                         </p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ const WelcomeSection = () => {
                             Create
                         </h3>
                         <p className="blurb">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                            Children are supported to develop their own ideas, selecting and using resources as they choose.
                         </p>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const WelcomeSection = () => {
                             Learn
                         </h3>
                         <p className="blurb">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        Children are highly engaged in their play, leading to deeper level meaningful learning, supported by skilful staff in the teachable moment.
                         </p>
                     </div>
                 </div>

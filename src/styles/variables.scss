@@ -1,6 +1,8 @@
 
-$brand-primary: #ffff33;
+$brand-primary: #ffe633;
 $brand-secondary: #F1F3Fa;
+$brand-side-menu: #e6e8ee;
+$brand-dropdown: #d0d2d7;
 $brand-logo: #4e1768ec; 
 
 $font-color-primary: #665372;
@@ -22,3 +24,9 @@ $font-color-secondary: #aaaaaa;
     font-size: 24px;
     color: #646B90;
 }
+.document-list-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+
