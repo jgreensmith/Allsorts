@@ -8,6 +8,7 @@ import Navbar from './components/navbar';
 import Welcome from './routes/welcome';
 import Footer from './components/footer';
 import WelcomeSection from './routes/welcome-section';
+import Documents from './routes/documents';
 import ParentDocuments from './routes/documents/parent-documents';
 import Policies from './routes/documents/policies';
 import Eyfs from './routes/documents/eyfs';
@@ -25,6 +26,9 @@ const App = () => (
             <Switch>
               <Route path="/about">
                 <About/>
+              </Route>
+              <Route path="/documents">
+                <Documents/> 
               </Route>
               <Route path="/parent">
                 <ParentDocuments/> 

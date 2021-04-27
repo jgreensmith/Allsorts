@@ -12,10 +12,20 @@ function Navbar() {
 
     const closeMobileMenu = () => setClick(false);
 
-    const onMouseEnter = () => setDropdown(true);
-    
-    const onMouseLeave = () => setDropdown(false);
-
+    const onMouseEnter = () => {
+        if (window.innerWidth < 1130) {
+            setDropdown(false);
+        } else {
+            setDropdown(true);
+        }
+    }
+    const onMouseLeave = () => {
+        if (window.innerWidth < 1130) {
+            setDropdown(false);
+        } else {
+            setDropdown(false);
+        }
+    }
     
 
     return (
@@ -46,9 +56,8 @@ function Navbar() {
                     className="nav-item"
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
-                    onClick={closeMobileMenu}
                 >
-                    <Link to='#' className="nav-link">
+                    <Link to='/documents' className="nav-link" onClick={closeMobileMenu}>
                         Documents <span className="fas fa-caret-down"></span>
                     </Link>
                     {dropdown && <Dropdown/>}

@@ -12,10 +12,7 @@ const Footer = () => {
                         <img src="/images/BigLottery-og.jpg"></img>
                     </div>
                     <div className="img-wrapper coop">
-                        <img src="/images/coOpLogo-og.jpg"></img>
-                    </div>
-                    <div className="img-wrapper">
-                        <img src="/images/BollingtonTC-og.jpg"></img>
+                        <img src="/images/favpng-coop.png"></img>
                     </div>
                     <div className="img-wrapper">
                         <p className="beer">

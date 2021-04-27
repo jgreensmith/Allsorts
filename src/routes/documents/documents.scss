@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+@import '../../styles/base.scss';
+
+.doc-link {
+    text-decoration: none;
+    //margin: auto;
+}
+.doc {
+    line-height: 30px;
+    font-size: 26px; 
+    color: $font-color-primary;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.doc-wrapper {
+    padding: 30px 10px;
+}
+
+@media screen and (max-width: 1130px) {
+    .doc-link{
+        text-decoration: underline;
+    }
+}

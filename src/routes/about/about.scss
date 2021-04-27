@@ -4,8 +4,16 @@
 h1.heading {
     padding-bottom: 4rem;
 }
-.about-info-wrapper {
-    width: 100%;
+.blurb-wrapper {
+    width: 50%;
     text-align: center;
     padding-bottom: 4rem;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1130px) {
+    .about-info-wrapper {
+        width: 100%;
+    }
 }
