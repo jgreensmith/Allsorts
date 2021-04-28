@@ -16,14 +16,14 @@ class AllsortsCarousel extends Component {
                     dynamicHeight={true}
                 >
                     <div>
-                        <img src="images/carousel/img1.jpg" />
+                        <img src="images/carousel/img6.jpg" />
                     </div>
-                    <div>
+                    {/* <div>
                         <img src="images/carousel/img2.jpg" />
-                    </div>
-                    <div>
+                    </div> */}
+                    {/* <div>
                         <img src="images/carousel/img3.jpg" />
-                    </div>
+                    </div> */}
                     <div>
                         <img src="images/carousel/img4.jpg" />
                     </div>
@@ -31,14 +31,14 @@ class AllsortsCarousel extends Component {
                         <img src="images/carousel/img5.jpg" />
                     </div>
                     <div>
-                        <img src="images/carousel/img6.jpg" />
+                        <img src="images/carousel/img1.jpg" />
                     </div>
                     <div>
                         <img src="images/carousel/img7.jpg" />
                     </div>
-                    <div>
+                    {/* <div>
                         <img src="images/carousel/img8.jpg" />
-                    </div>
+                    </div> */}
                     
                 </Carousel>
             </div>

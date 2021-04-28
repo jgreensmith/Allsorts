@@ -11,6 +11,9 @@ const Footer = () => {
                     <div className="img-wrapper">
                         <img src="/images/BigLottery-og.jpg"></img>
                     </div>
+                    <div className="img-wrapper">
+                        <img src="/images/floor.jpeg"></img>
+                    </div>
                     <div className="img-wrapper coop">
                         <img src="/images/favpng-coop.png"></img>
                     </div>

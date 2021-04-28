@@ -3,7 +3,7 @@ import './calendar.scss';
 
 const Calendar = () => {
     return (
-        <section className="section secondary">
+        <section className="section">
             <div className="block-container">
                 <h1 className="main-title heading">School Calendar</h1>
                 <div className="calendar-wrapper">

@@ -6,7 +6,7 @@ import './contact.scss';
 const Contact = () => {
 
     return (
-        <section className="section secondary">
+        <section className="section">
             <div className="block-container">
                 <h1 className="main-title heading">
                     Contact Us
