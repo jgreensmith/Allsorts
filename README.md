@@ -8,7 +8,7 @@ https://master.d2jo261a32ipfp.amplifyapp.com/
 React\
 node.js\
 SCSS\
-AWS Amplify\
+AWS Amplify
 
 ### `npm start`
 
