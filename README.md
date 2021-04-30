@@ -1,14 +1,14 @@
-# URL
+## URL
 
 https://master.d2jo261a32ipfp.amplifyapp.com/
 (Hosted on a temporary domain, waiting for the schools domain to transfer).
 
 ## tech stack
 
-React
-node.js
-SCSS
-AWS Amplify
+React\
+node.js\
+SCSS\
+AWS Amplify\
 
 ### `npm start`
 
