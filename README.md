@@ -1,12 +1,12 @@
-# URL
+## URL
 
 https://www.allsortsbollington.org/
 
 ## tech stack
 
-React
-node.js
-SCSS
+React\
+node.js\
+SCSS\
 AWS Amplify
 
 ### `npm start`
