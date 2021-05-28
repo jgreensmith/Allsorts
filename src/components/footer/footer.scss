@@ -1,58 +1,62 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .footer {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
 }
 .footer-container {
-    background-color: #53405c;
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2px 10px 0;
-    &.top {
-        border: 1px solid lightgray;
-        border-right: none;
-        border-left: none;
-        background-color: #fff;
-        justify-content: space-between;
-    }
-    &.btm {
-        padding: 20px 10px;
-        justify-content: flex-start;
-    }
+  background-color: #53405c;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2px 10px 0;
+  &.top {
+    border: 1px solid lightgray;
+    border-right: none;
+    border-left: none;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+  &.btm {
+    padding: 20px 10px;
+    justify-content: flex-start;
+  }
 }
 
 .footer-img-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
 }
 
 .img-wrapper {
-    display: block;
-    margin: auto;
-    padding: 0 10px;
+  display: block;
+  margin: auto;
+  padding: 0 10px;
 }
 .beer {
-    color: #009e41;
-    max-width: 100px;
-    font-weight: 500;
+  color: #009e41;
+  max-width: 100px;
+  font-weight: 500;
 }
 .footer-object-wrapper {
-    padding: 0 20px 0 60px;
-    &.sm {
-        margin-top: 3px;
-    }
+  padding: 0 20px 0 60px;
+  &.sm {
+    margin-top: 3px;
+  }
 }
 .fb-icon {
-    color: #4d71c0;
+  color: #4d71c0;
 }
 .copyright {
-    color: $brand-secondary;
+  color: $brand-secondary;
 }
 
-
+@media screen and (max-width: 460px) {
+  .floor-size {
+    width: 80%;
+  }
+}

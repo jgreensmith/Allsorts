@@ -1,29 +1,22 @@
-@import '../../styles/variables.scss';
-@import '../../styles/base.scss';
+@import "../../styles/variables.scss";
+@import "../../styles/base.scss";
 
 h1.heading {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 .calendar {
-    border: 0;
-    width: 100%;
-    height: 600px;
-    
-    
+  border: 0;
+  width: 100%;
+  height: 600px;
 }
 .calendar-wrapper {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 460px) {
+  .calendar-wrapper {
+    width: 100%;
+  }
+}
 
 //style="border: 0" width="800" height="600" frameborder="0" scrolling="no"

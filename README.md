@@ -1,7 +1,6 @@
 # URL
 
-https://master.d2jo261a32ipfp.amplifyapp.com/
-(Hosted on a temporary domain, waiting for the schools domain to transfer).
+https://www.allsortsbollington.org/
 
 ## tech stack
 

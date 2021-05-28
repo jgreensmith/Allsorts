@@ -1,36 +1,38 @@
-
 $brand-primary: #ffe633;
-$brand-secondary: #F1F3Fa;
+$brand-secondary: #f1f3fa;
 $brand-side-menu: #e6e8ee;
 $brand-dropdown: #d0d2d7;
-$brand-logo: #4e1768ec; 
+$brand-logo: #4e1768ec;
 
 $font-color-primary: #665372;
 $font-color-secondary: #aaaaaa;
 
 .main-title {
-    color: #5f5f5f;
-    font-size: 45px;
-    text-align: center;
-    font-weight: 400;
-    margin: auto;
-    padding-bottom: 15px;
-    &.sm {
-        font-size: 1.25rem;
-        padding: 0;
-    }
+  color: #5f5f5f;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 400;
+  margin: auto;
+  padding-bottom: 15px;
+  &.sm {
+    font-size: 1.25rem;
+    padding: 0;
+  }
 }
 .blurb-header {
-    font-size: 24px;
-    color: #646B90;
+  font-size: 24px;
+  color: #646b90;
 }
 .blurb {
-    font-size: 1.2rem;
-    line-height: 1.7rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
 }
 .document-list-wrapper {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
-
-
+@media screen and (max-width: 460px) {
+  .document-list-wrapper {
+    width: 100%;
+  }
+}
