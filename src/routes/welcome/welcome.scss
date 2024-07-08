@@ -2,11 +2,10 @@
 @import '../../styles/base.scss';
 
 
-.welcome-header {
+header.welcome-header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10px;
 }
 
 .welcome-wrapper {
@@ -14,61 +13,8 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     margin: 15px;
-}
-.scoop {
-    width: 80%;
-    height: 1px;
-    background-color: $font-color-primary;
-    display: block;
-    margin: 50px auto 10px auto;
-}
-.the-button {
-    display: flex;
-    justify-content: center;
-    border-radius: 25px;
-
-}
-.btn-wrapper {
-    display: block;
-    margin: auto;
-    margin-left: 30px;
-    border-radius: 25px;
-
-}
-.ofsted-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-    padding: 1rem 1rem 4rem 1rem;
-    margin: 15px;
-}
-.ahoy{
-    width: 220px;
-    display: block;
-    margin: auto;
-    height: 80px;
-    border-radius: 25px;
-}
-.poop {
-    display: block;
-    margin: auto;
-    margin-right: 30px;
-}
-
-@media (max-width: 768px) {
-    .ofsted-wrapper{
-        flex-direction: column;
-    }
-    .poop {
-        margin: auto;
-    }
-    .btn-wrapper {
-        margin: auto;
-        padding-top: 30px;
-    }
 }
 
 
