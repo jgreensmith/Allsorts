@@ -1,5 +1,4 @@
 import React from 'react';
-import AllsortsCarousel from '../../components/carousel';
 import './welcome.scss';
 
 const Welcome = () => {
@@ -28,7 +27,6 @@ const Welcome = () => {
                 </a>
                 </div>
             </div>
-            {/* <AllsortsCarousel/> */}
         </div>
     );
 };
